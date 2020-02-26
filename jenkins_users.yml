@@ -2,10 +2,17 @@
 - name: Add jenkins user
   hosts: jenkins
   jenkins_users:
-  - username: 'temp'
-    full_name: 'Temp'
-    email: 'temp@temp.com'
-    password: 'temp'
-    roles: 
-     - 'jenkins-administer'
+  - username: 'admin'
+    full_name: 'Jenkins administrator user'
+    email: 'admin@foo.bar'
+    password: 'admin'
+    roles:
+      - 'jenkins-administer'
+    public_keys: []
+  - username: 'user'
+    full_name: 'Jenkins read only user'
+    email: 'user@foo.bar'
+    password: 'user'
+    roles:
+      - 'jenkins-read'
     public_keys: []
