@@ -1,7 +1,7 @@
 ---
 - hosts: jenkins
   become: true
-  jenkins_users:
+  - jenkins_users:
     - username: 'temp'
       full_name: 'Temp'
       email: 'temp@temp.com'
