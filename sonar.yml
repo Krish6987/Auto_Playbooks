@@ -1,0 +1,13 @@
+---
+- name: Install wget
+  apt:
+    name: wget
+    state: present
+
+- name: Install openjdk
+  apt:
+    name: default-jdk
+    state: present
+ sonar_install_directory: /opt/sonarqube
+ sonar_download_url: http://dist.sonar.codehaus.org/sonarqube-4.5.4.zip
+ sonar_version_directory: sonarqube-4.5.4
